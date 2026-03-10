@@ -1,4 +1,4 @@
-HISTFILE=~/.config/.histfile
+HISTFILE=~/.config/zsh/.histfile
 HISTSIZE=1000
 SAVEHIST=10000
 setopt beep extendedglob nomatch
