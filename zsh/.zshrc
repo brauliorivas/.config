@@ -21,6 +21,12 @@ source $ZSH/oh-my-zsh.sh
 eval "$(oh-my-posh init zsh --config $HOME/.config/night-owl.omp.json)"
 eval "$(zoxide init zsh)"
 
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
 export EDITOR=nvim
 
 alias grep=ripgrep
@@ -29,5 +35,6 @@ alias top=btop
 alias ps=procs
 alias cat=bat
 alias vi=nvim
+alias tree-sitter-cli=tree-sitter
 
 fastfetch
