@@ -2,3 +2,8 @@ BraveSoftware
 dconf
 pulse
 tpm-plugins
+assets
+go
+gtk-4.0/gtk-dark.css
+gtk-4.0/gtk.css
+ohmyzsh
