@@ -9,10 +9,13 @@ autoload -Uz compinit
 compinit
 
 export ZSH="$HOME/.config/ohmyzsh"
+export EDITOR=nvim
+
 plugins=(
   git
-  zsh-syntax-highlighting
   zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-vi-mode
   you-should-use
   colored-man-pages
 )
@@ -27,14 +30,23 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-export EDITOR=nvim
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	command yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
-alias grep=ripgrep
+alias grep=rg
 alias find=fd
 alias top=btop
 alias ps=procs
 alias cat=bat
 alias vi=nvim
 alias tree-sitter-cli=tree-sitter
+alias ls=eza
+alias hyprpicker=hyprpicker -a
+alias locate=plocate
 
 fastfetch
