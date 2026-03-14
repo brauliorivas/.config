@@ -11,6 +11,8 @@ compinit
 export ZSH="$HOME/.config/ohmyzsh"
 export EDITOR=nvim
 
+ZSH_TMUX_AUTOSTART=true
+
 plugins=(
   git
   zsh-autosuggestions
@@ -18,11 +20,14 @@ plugins=(
   zsh-vi-mode
   you-should-use
   colored-man-pages
+  tmux
 )
+
 source $ZSH/oh-my-zsh.sh
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/night-owl.omp.json)"
 eval "$(zoxide init zsh)"
+eval "$(direnv hook zsh)"
 
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
@@ -48,5 +53,6 @@ alias tree-sitter-cli=tree-sitter
 alias ls=eza
 alias hyprpicker=hyprpicker -a
 alias locate=plocate
+alias fr=nix-direnv-reload
 
 fastfetch
