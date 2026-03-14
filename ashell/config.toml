@@ -1,24 +1,14 @@
 log_level = "warn"
 outputs = { Targets = ["eDP-1"] }
 position = "Top"
-app_launcher_cmd = "walker"
 
 [modules]
-left = [ [ "appLauncher", "Updates", "Workspaces" ] ]
+left = [ "Workspaces" ]
 center = [ "WindowTitle" ]
 right = [ "SystemInfo", [  "Tray", "Clock", "Privacy", "Settings" ] ]
 
-[updates]
-check_cmd = "checkupdates; paru -Qua"
-update_cmd = 'alacritty -e bash -c "paru; echo Done - Press enter to exit; read" &'
-
 [workspaces]
 enable_workspace_filling = true
-
-[[CustomModule]]
-name = "appLauncher"
-icon = "󱗼"
-command = "walker"
 
 [window_title]
 truncate_title_after_length = 100
@@ -54,4 +44,3 @@ strong = "#414868"
 
 [appearance.secondary_color]
 base = "#0c0d14"
-
