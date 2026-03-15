@@ -1,0 +1,12 @@
+[submodule "DeepinV20-white-cursors"]
+	path = DeepinV20-white-cursors
+	url = git@github.com:yeyushengfan258/DeepinV20-white-cursors.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:brauliorivas/nvim.git
+[submodule "tpm"]
+	path = tpm
+	url = git@github.com:tmux-plugins/tpm.git
+[submodule "nixos"]
+	path = nixos
+	url = git@github.com:brauliorivas/nixos.git
