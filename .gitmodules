@@ -10,3 +10,6 @@
 [submodule "nixos"]
 	path = nixos
 	url = git@github.com:brauliorivas/nixos.git
+[submodule "ohmyzsh"]
+	path = ohmyzsh
+	url = git@github.com:ohmyzsh/ohmyzsh.git
