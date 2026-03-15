@@ -7,3 +7,7 @@ go
 gtk-4.0/gtk-dark.css
 gtk-4.0/gtk.css
 mozilla
+Thunar
+glib-2.0
+xfce4
+mimeapps.list
