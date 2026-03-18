@@ -12,6 +12,8 @@ export ZSH="$HOME/.config/ohmyzsh"
 export EDITOR=nvim
 
 ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOCONNECT=false
+ZSH_TMUX_AUTOQUIT=false
 
 plugins=(
   git
