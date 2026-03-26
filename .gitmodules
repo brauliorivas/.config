@@ -7,9 +7,6 @@
 [submodule "tpm"]
 	path = tpm
 	url = git@github.com:tmux-plugins/tpm.git
-[submodule "nixos"]
-	path = nixos
-	url = git@github.com:brauliorivas/nixos.git
 [submodule "ohmyzsh"]
 	path = ohmyzsh
 	url = git@github.com:ohmyzsh/ohmyzsh.git
