@@ -39,7 +39,7 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-copy_dev_template() {
+function copy_dev_template() {
   local src_dir="$HOME/.config"
 
   cp "$src_dir/flake.template.nix" ./flake.nix 2>/dev/null || echo "Missing flake.template.nix"
