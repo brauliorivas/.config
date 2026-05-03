@@ -14,8 +14,3 @@ git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ${ZSH_CUSTOM
 git clone https://github.com/jeffreytse/zsh-vi-mode \
   $ZSH_CUSTOM/plugins/zsh-vi-mode
 ```
-
-Autoload a nix flake
-```bash
-echo "use flake" >> .envrc && direnv allow
-```

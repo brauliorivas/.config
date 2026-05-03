@@ -27,6 +27,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
+
 eval "$(oh-my-posh init zsh --config $HOME/.config/night-owl.omp.json)"
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
