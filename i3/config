@@ -58,6 +58,8 @@ bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+exec xinput set-prop "DELL0A25:00 06CB:CDD6 Touchpad" "libinput Tapping Enabled" 1
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
