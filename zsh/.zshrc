@@ -27,6 +27,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# >>> Codex installer >>>
+export PATH="/home/brauliorivas/.local/bin:$PATH"
+# <<< Codex installer <<<
+
 eval "$(oh-my-posh init zsh --config $HOME/.config/night-owl.omp.json)"
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
