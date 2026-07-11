@@ -31,6 +31,12 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/home/brauliorivas/.local/bin:$PATH"
 # <<< Codex installer <<<
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+. "$HOME/.cargo/env"
+
 eval "$(oh-my-posh init zsh --config $HOME/.config/night-owl.omp.json)"
 eval "$(zoxide init zsh)"
 eval "$(direnv hook zsh)"
