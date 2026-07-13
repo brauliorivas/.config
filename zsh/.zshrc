@@ -56,16 +56,17 @@ function copy_dev_template() {
   cp "$src_dir/.envrc.template" ./.envrc 2>/dev/null || echo "Missing .envrc.template"
 }
 
+alias cd=z
+alias ls=eza
+alias cat=bat
 alias grep=rg
 alias find=fd
 alias top=btop
 alias ps=procs
-alias cat=bat
 alias vi=nvim
-alias tree-sitter-cli=tree-sitter
-alias ls=eza
-alias hyprpicker=hyprpicker -a
 alias locate=plocate
+alias tree-sitter-cli=tree-sitter
+alias hyprpicker=hyprpicker -a
 alias fr=nix-direnv-reload
 
 fastfetch
