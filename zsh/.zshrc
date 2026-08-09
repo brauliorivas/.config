@@ -35,6 +35,14 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# pnpm
+export PNPM_HOME="/home/brauliorivas/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
+
 . "$HOME/.cargo/env"
 
 eval "$(oh-my-posh init zsh --config $HOME/.config/night-owl.omp.json)"
@@ -60,7 +68,6 @@ alias cd=z
 alias ls=eza
 alias cat=bat
 alias grep=rg
-alias find=fd
 alias top=btop
 alias ps=procs
 alias vi=nvim
@@ -70,3 +77,7 @@ alias hyprpicker=hyprpicker -a
 alias fr=nix-direnv-reload
 
 fastfetch
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
