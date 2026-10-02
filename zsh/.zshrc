@@ -66,12 +66,8 @@ function copy_dev_template() {
 
 alias cd=z
 alias ls=eza
-alias cat=bat
-alias grep=rg
 alias top=btop
-alias ps=procs
 alias vi=nvim
-alias locate=plocate
 alias tree-sitter-cli=tree-sitter
 alias hyprpicker=hyprpicker -a
 alias fr=nix-direnv-reload
