@@ -92,6 +92,9 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+bindsym Ctrl+Mod1+h workspace prev
+bindsym Ctrl+Mod1+l workspace next
+
 # split in horizontal orientation
 bindsym $mod+h split h
 
