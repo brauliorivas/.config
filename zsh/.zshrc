@@ -71,6 +71,7 @@ alias vi=nvim
 alias tree-sitter-cli=tree-sitter
 alias hyprpicker=hyprpicker -a
 alias fr=nix-direnv-reload
+alias etest='cmake -S . -B build && cmake --build build'
 
 fastfetch
 
