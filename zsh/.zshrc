@@ -23,6 +23,7 @@ plugins=(
   you-should-use
   colored-man-pages
   tmux
+  exercism
 )
 
 source $ZSH/oh-my-zsh.sh
