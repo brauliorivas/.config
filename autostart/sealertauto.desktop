@@ -7,4 +7,4 @@ Type=Application
 StartupNotify=false
 X-KDE-autostart-after=panel
 Icon=setroubleshoot_icon
-X-GNOME-Autostart-enabled=false
+X-GNOME-Autostart-enabled=true

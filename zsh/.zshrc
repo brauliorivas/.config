@@ -89,3 +89,6 @@ export PATH="$HOME/.bend/bin:$PATH"
 # This section can be safely removed at any time if needed.
 [[ ! -r '/home/brauliorivas/.opam/opam-init/init.zsh' ]] || source '/home/brauliorivas/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null; true
 # END opam configuration
+#
+export FLYCTL_INSTALL="/home/brauliorivas/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
